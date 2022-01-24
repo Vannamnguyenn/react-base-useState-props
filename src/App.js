@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// props
+// +) dữ liệu truyền từ component cha xuôg cpm con
+// +) khi nhận props thì ko sửa đc ở cpm con
+// +) làm đa dạng cpn khi render
+
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title={3} />
+      <hr />
+      <Body />
     </div>
   );
 }
